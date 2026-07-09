@@ -9,7 +9,7 @@ st.set_page_config(page_title="서울시 미세먼지 대시보드", page_icon="
 @st.cache_data
 def load_data():
     # CSV 파일 로드 (파일명이 실제와 같은지 확인하세요)
-    df = pd.read_csv("서울시 시간별 (초)미세먼지_2025년.csv")
+    df = pd.read_csv("dustdata.csv")
     
     # '일시' 컬럼을 날짜/시간 타입으로 변환
     df['일시'] = pd.to_datetime(df['일시'])
