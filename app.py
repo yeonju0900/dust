@@ -8,7 +8,7 @@ st.set_page_config(page_title="서울시 미세먼지 대시보드", page_icon="
 # 2. 데이터 불러오기 (캐싱을 통해 앱 속도 향상)
 @st.cache_data
 def load_data():
-    file_name = "dustdata.csv" # 깃허브에 올리신 파일명과 정확히 일치해야 합니다.
+    file_name = "dust.csv" # 깃허브에 올리신 파일명과 정확히 일치해야 합니다.
     
     try:
         # 1. 한국어 윈도우/엑셀 기본 인코딩인 cp949로 시도
